@@ -7,7 +7,7 @@ class GlobalAppbar  extends StatelessWidget  implements PreferredSizeWidget{
 
   @override
   Widget build(BuildContext context) {
-    return AppBar(backgroundColor: Colors.blueGrey,toolbarHeight: 100,shadowColor: Colors.grey,elevation:20,
+    return AppBar(backgroundColor: Color(0xff374151),toolbarHeight: 150,shadowColor: Colors.grey,elevation:20,
 title:
   Center(
     child: Padding(
@@ -80,7 +80,7 @@ SizedBox(height: 8,),
               children: [
                 Container(height: 50,width: 80,
 
-                  decoration: BoxDecoration(borderRadius: BorderRadius.circular(20),color: Colors.pink,
+                  decoration: BoxDecoration(borderRadius: BorderRadius.circular(20),color: Color(0xffE3D7FA),
 
                   ),
                   child: Center(child: Text(status)),
@@ -112,9 +112,9 @@ class Checkio  extends StatelessWidget {
       child: Center(
         child: Column(
           children: [
-            Text(checkyn,style: TextStyle(fontWeight: FontWeight.bold),),
-            SizedBox(height: 5,),
-            Text('$date at $time'),
+            Text(checkyn,style: TextStyle(fontWeight: FontWeight.bold,fontSize: 14),),
+            SizedBox(height: 10,),
+            Text('$date at $time',style: TextStyle(color: Color(0xff374151),fontSize: 12),),
           ],
         ),
       ),
@@ -138,16 +138,17 @@ class Checkioc  extends StatelessWidget {
         child: Column(
           children: [
             Text(checkyn,style: TextStyle(fontWeight: FontWeight.bold),),
-            SizedBox(height: 5,),
-            Row(
+            SizedBox(height: 10,),
+            Row(mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Text('$date at $time'),
-                Container(height: 20,width: 30,
+                SizedBox(width: 10,),
+                Container(height: 20,width: 100,
 
-                  decoration: BoxDecoration(borderRadius: BorderRadius.circular(20),color: Colors.green,
+                  decoration: BoxDecoration(borderRadius: BorderRadius.circular(20),color: Color(0xffD5F2D4),
 
                   ),
-                  child: Center(child: Text(hour)),
+                  child: Center(child: Text(hour,style: TextStyle(color: Colors.green,fontSize: 8),)),
                 ),
               ],
             ),
@@ -159,22 +160,6 @@ class Checkioc  extends StatelessWidget {
 }
 
 
-class bottomnav   extends StatelessWidget {
-  final int Selectedindex;
-  final Function(int)ontap;
-  const bottomnav({Key? key,required this.Selectedindex,required this.ontap}) : super(key: key);
 
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(body:
-    BottomNavigationBar(currentIndex: Selectedindex,
-      onTap: ontap,
-      items: const[BottomNavigationBarItem(icon: Icon(Icons.calendar_month_rounded),label: ''),
-        BottomNavigationBarItem(icon: Icon(Icons.lock_clock),label: ''),
-        BottomNavigationBarItem(icon: Icon(Icons.person),label: ''),
-
-      ],),);
-  }
-}
 
 

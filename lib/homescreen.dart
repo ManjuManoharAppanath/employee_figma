@@ -12,14 +12,7 @@ class Homescreen  extends StatefulWidget {
 }
 
 class _HomescreenState extends State<Homescreen> {
-  int Selectedindex=0;
-  final List<Widget> pages=[const Homescreen(),const Attendance(),const Profile()];
 
-  void _onItemTapped(int index){
-    setState(() {
-      Selectedindex=index;
-    });
-  }
 
   @override
 
