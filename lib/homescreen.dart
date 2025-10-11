@@ -23,7 +23,7 @@ body:SingleChildScrollView(
   
     children: [SizedBox(height: 5,),
   
-      Text('My Appointments',style: TextStyle(fontWeight: FontWeight.bold),),
+      Text('My Appointments',style: TextStyle(fontWeight: FontWeight.w400,color: Color(0xff000000)),),
   
       SizedBox(height: 5,),
   
@@ -37,7 +37,7 @@ body:SingleChildScrollView(
   
       SizedBox(height: 10,),
   
-      Text('Next Appointments',style: TextStyle(fontWeight: FontWeight.bold),),
+      Text('Next Appointments',style: TextStyle(fontWeight: FontWeight.w400,color: Color(0xff000000)),),
   
       SizedBox(height: 5,),
   
