@@ -85,7 +85,6 @@ class Appointment  extends StatelessWidget {
             SizedBox(height: 5,),
             Row(children: [Container(decoration: BoxDecoration(borderRadius: BorderRadius.circular(30),),
                 child: Icon(Icons.check_circle_outline,color: Colors.black,)),Text(price),
-
             ],),
 SizedBox(height: 8,),
             Row(mainAxisAlignment: MainAxisAlignment.spaceBetween,
